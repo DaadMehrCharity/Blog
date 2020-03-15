@@ -1,0 +1,125 @@
+/**** Animation ****/
+*, a, button, input, textarea, select {
+    -webkit-transition:filter 1s, width 1s, height 1s, background 1s, color 1s, font 1s, box-shadow 2s, -webkit-transform 1s, opacity 2s, border 1s;
+    transition:filter 1s, width 1s, height 1s, background 1s, color 1s, font 1s, box-shadow 2s, transform 1s, opacity 2s, border 1s;
+}
+
+/**** Font ****/
+
+@font-face {
+    font-family: Titr;
+    src: url('../fonts/Titr.ttf');
+}
+
+* {
+    font-family: Titr;
+}
+
+
+/**** Layout ****/
+
+
+html, body {
+    font-size: 1.1em;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-size: auto 17em;
+    display: block;
+    margin: 0 auto 0 auto;
+    height: 20em;
+    width: 50em;
+    background-image: url('../media/header.svg');
+    padding-top: 10em;
+    text-align: center;
+}
+header img {
+    position: relative;
+    height: 5em;
+}
+
+.container {
+    margin: 0 auto 0 auto;
+    margin-top: 1em;
+    border-radius: .3em;
+    background-color: #ffffff;
+}
+
+footer{
+    margin-top: 2em;
+    font-size: 0.8em;
+    padding: 5em;
+    height: 20em;
+    /* background-color: #008e9b;
+    background-color: #2e4f2e; */
+}
+
+footer .row .col {
+    padding: 1em;
+    margin: 1em;
+    min-width: 17em;
+    height: 20em;
+}
+
+footer>.row>.col:nth-child(1) {
+    color: black;
+    background-image: url('../media/footer1.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 15em auto;
+    padding-right: 6em;
+    color:#2e4f2e;
+}
+footer>.row>.col:nth-child(3) {
+    color: black;
+    background-image: url('../media/footer2.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 20em auto;
+    padding-right: 6em;
+}
+
+#menu {
+    /* text-decoration: underline; */
+    color: #1e0039;
+}
+#menu a:hover{
+    color: #2e4f2e;
+}
+
+
+/**** Form elements ****/
+ul li {
+    list-style: none;
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    color: black;
+}
+label {
+    color: #000066;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.form-check label{
+    padding-right: 1em;
+}
+.card-text{
+    font-size: .7em;
+}
+.btn-primary {
+    background-color: #000066;
+    border-color: #000066;
+}

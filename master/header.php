@@ -1,102 +1,35 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>موسسه‌ی خیریه‌ی دادمهر</title>
+    <link rel="stylesheet" href="<?php echo _Root ?>css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo _Root ?>css/home.css" />
+    <script src="<?php echo _Root ?>js/jquery.min.js"></script>
+    <script src="<?php echo _Root ?>js/popper.min.js"></script>
+    <script src="<?php echo _Root ?>js/bootstrap.min.js"></script>
 
-    <title>tiny PHP PAIN RELIEVER</title>
+</head>
+<body>
 
-    <link rel="canonical" href="http://owerofthisdomain.ir">
+<!-- HEADER START -->
+<header>
+  <img src="<?php echo _Root ?>media/logo.png" alt="موسسه‌ی خیریه‌ی دادمهر" />
+</header>
+<!-- HEADER END -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="static/css/bootstrap.css" rel="stylesheet">
+<!-- CONTAINER START -->
+<div class="container">
 
-    <!-- Custom styles for this template -->
-    <link href="static/css/dashboard.css" rel="stylesheet">
-  </head>
+  <div class="row">
 
-  <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
-      <span class="form-control form-control-dark">
-      <?php
-        // Echos the page id and login
-        echo isset($_GET['id']) ? $_GET['id'] : 'welcome';
-        echo " (u:" . $_SERVER['PHP_AUTH_USER'] . ")";
-      ?>
-      </span>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
+    <ul class="col-3" id="menu">
+      <li><a href="<?php echo _Root ?>index.php">خانه</a></li>
+      <li><a href="<?php echo _Root ?>contact.php">ارتباط با ما</a></li>
+      <li><a href="<?php echo _Root ?>support.php">حمایت از ما</a></li>
+      <li><a href="<?php echo _Root ?>about.php">مدارک موسسه</a></li>
+    </ul>
 
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Dashbaord
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?id=superlitesql">
-                  <span data-feather="code"></span>
-                  SuperLiteSQL
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?id=crud">
-                  <span data-feather="file"></span>
-                  Items
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?id=users">
-                  <span data-feather="users"></span>
-                  Users
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?id=server">
-                  <span data-feather="bar-chart-2"></span>
-                  Server Resources
-                </a>
-              </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Saved reports</span>
-              <a class="d-flex align-items-center text-muted" href="#">
-                <span data-feather="plus-circle"></span>
-              </a>
-            </h6>
-
-            <ul class="nav flex-column mb-2"><?php
-              $vowels = array("Classic Report", "-", ".sql"); //TODO: replace item check
-              if ($handle = opendir('./reports')) {
-                  while (false !== ($entry = readdir($handle))) {
-                      if ($entry != "." && $entry != ".." && $entry != "filters") {
-                          echo '<li class="nav-item">
-                          <a class="nav-link" href="index.php?id=superlitesql&entry=' . $entry . '">
-                            <span data-feather="file-text"></span>
-                            ' . $entry . '
-                          </a>
-                        </li>';
-                      }
-                  }
-                  closedir($handle);
-              }
-            ?></ul>
-          </div>
-        </nav>
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="col-9" id="news">
