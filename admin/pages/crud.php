@@ -39,7 +39,6 @@
                 CONCAT(\'<a class="btn btn-sm btn-default" href="index.php?id=crud&table=Posts&entry=\', Id , \'">\', \'Edit\', \'</a>\') as Edit,
                 Id,
                 Title,
-                `Type`,
                 Submit
                 FROM `Posts`';
                 break;
@@ -48,6 +47,7 @@
                 $select_query = 'SELECT
                 CONCAT(\'<a class="btn btn-sm btn-default" href="index.php?id=crud&table=Comments&entry=\', id , \'">\', \'Edit\', \'</a>\') as Edit,
                 Phone,
+                Status,
                 Body
                 FROM `Comments`';
                 break;

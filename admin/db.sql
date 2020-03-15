@@ -61,7 +61,6 @@ CREATE TABLE `News` (
 
 CREATE TABLE `Posts` (
   `Id` bigint(20) NOT NULL,
-  `Type` varchar(5) COLLATE utf8_persian_ci NOT NULL,
   `Title` varchar(3000) CHARACTER SET latin1 NOT NULL,
   `Image` varchar(3000) COLLATE utf8_persian_ci DEFAULT NULL,
   `Abstract` longtext CHARACTER SET latin1,
