@@ -19,6 +19,7 @@ require_once 'admin/config.php';
     <img src="<?php echo _Root ?>media/logo.png" alt="موسسه‌ی خیریه‌ی دادمهر" />
     <h2>درباره موسسه داد‌مهر</h2>
     <p>حامی زنان سرپرست خانواده</p>
+    <a href="index.php">بازگشت</a>
 </header>
 
 

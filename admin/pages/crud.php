@@ -10,7 +10,7 @@
 <form method="get" class="form-inline">
     <input type="hidden" name="id" value="crud" />
     <select name="table" class="form-control inline">
-        <option value="Posts">News</option>
+        <option value="News">News</option>
         <option value="Posts">Posts</option>
         <option value="Comments">Comments</option>
     </select>

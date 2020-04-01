@@ -36,7 +36,7 @@ header {
     display: block;
     margin: 0 auto 0 auto;
     height: 20em;
-    width: 50em;
+    width: 100%;
     background-image: url('../media/header.svg');
     padding-top: 10em;
     text-align: center;
@@ -89,6 +89,8 @@ footer>.row>.col:nth-child(3) {
 
 #menu {
     /* text-decoration: underline; */
+    min-width: 10em;
+    text-align: left;
     color: #1e0039;
 }
 #menu a:hover{

@@ -8,19 +8,22 @@
 <footer>
 <div class="row">
   <div class="col">
+  تلفن:
+  08138251018
   </div>
   <div class="col">
   <address>
       آدرس دفتر:
       <br/>
       همدان،
-      خیابان ۱،
-      کوچه ۲،
-      پلاک ۳۴
+      خیابان طالقانی،
+      چهارراه امیرکبیر،
+      رو به روی دفتر قضایی
   </address>
   </div>
   <div class="col">
-  <br/>
+    شماره کارت جهت نیکو کاری 
+    6037997599025617
   <!-- <small class="text-muted">
       برنامه نویسی و توسعه در
       <a href="http://gordarg.com">
