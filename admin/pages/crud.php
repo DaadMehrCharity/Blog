@@ -27,7 +27,8 @@
     Id,
     Title,
     Submit
-    FROM `News`';
+    FROM `News`
+    ORDER BY `Id` DESC';
     if (isset($_GET['table']))
     {
         $table_name  = $_GET['table'];
@@ -40,7 +41,8 @@
                 Id,
                 Title,
                 Submit
-                FROM `Posts`';
+                FROM `Posts`
+                ORDER BY `Id` DESC';
                 break;
             case "Comments":
                 $table_id = 'Id';
@@ -49,7 +51,8 @@
                 Phone,
                 Status,
                 Body
-                FROM `Comments`';
+                FROM `Comments`
+                ORDER BY `Id` DESC';
                 break;
         }
     }

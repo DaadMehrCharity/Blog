@@ -24,7 +24,7 @@
 
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">DaadMehr Charity</a>
       <span class="form-control form-control-dark">
       <?php
         // Echos the page id and login
